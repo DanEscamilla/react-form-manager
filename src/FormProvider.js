@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import FormManager from './FormManager';
 
-class DBProvider extends React.Component {
+class FormProvider extends React.Component {
 
   getChildContext() {
     return {
@@ -16,8 +16,8 @@ class DBProvider extends React.Component {
   }
 }
 
-DBProvider.childContextTypes = {
+FormProvider.childContextTypes = {
   formManager: PropTypes.object
 };
 
-export default DBProvider
+export default FormProvider
