@@ -22,7 +22,6 @@ class Field {
   }
 
   setState({value,error}={}){
-    console.log(this.options.liveValidation);
     if (this.state.error||this.options.liveValidation){
       error = this.validationFn(value);
     }
